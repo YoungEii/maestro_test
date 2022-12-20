@@ -1,0 +1,7 @@
+appId: com.example.cicdtest02
+---
+- launchApp
+- tapOn: "GoSecond"
+- tapOn: "GoThird"
+- scroll
+- assertVisible: "! - 20"
