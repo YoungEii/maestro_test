@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites>
-  <testsuite name="Test Suite" device="iPhone 14 Pro - iOS 16.0 - F7CABB3C-DD6F-432D-A86F-5884287D2261" tests="3" failures="0">
-    <testcase id="LaunchApp2" name="LaunchApp2"/>
-    <testcase id="LaunchApp" name="LaunchApp"/>
-    <testcase id="Tap Increment" name="Tap Increment"/>
-  </testsuite>
-</testsuites>

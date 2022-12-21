@@ -10,14 +10,18 @@ class SecondPage extends StatefulWidget {
 }
 
 class _SecondPageState extends State<SecondPage> {
+  void _goThird() {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ThirdPage()));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Second Page')),
-      body: GestureDetector(
-        onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ThirdPage())),
-        child: const Center(
-          child: Text('GoThird'),
+      body: Center(
+        child: TextButton(
+          onPressed: _goThird,
+          child: const Text('GoThird'),
         ),
       ),
     );

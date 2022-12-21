@@ -1,7 +1,9 @@
-appId: com.example.cicdtest02
+appId: com.example.maestroTest
 ---
 - launchApp
 - tapOn: "GoSecond"
 - tapOn: "GoThird"
 - scroll
 - assertVisible: "! - 20"
+- swipe:
+    direction: DOWN
