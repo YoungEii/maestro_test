@@ -65,6 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _incrementCounter2() {
+    setState(() {
+      _counter++;
+      _counter++;
+    });
+  }
+
   void _goSecond() {
     Navigator.of(context).push(MaterialPageRoute(builder: (context) => const SecondPage()));
   }
@@ -110,7 +117,12 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            TextButton(onPressed: _goSecond, child: const Text('GoSecond'))
+            TextButton(onPressed: _goSecond, child: const Text('GoSecond')),
+            IconButton(
+              onPressed: _incrementCounter2,
+              icon: const Icon(Icons.update),
+              tooltip: 'plus_two',
+            )
           ],
         ),
       ),

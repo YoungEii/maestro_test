@@ -6,4 +6,4 @@ appId: com.example.maestroTest
 - scroll
 - assertVisible: "! - 20"
 - swipe:
-    direction: DOWN
+    direction: UP
