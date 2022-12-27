@@ -13,7 +13,7 @@ failedCount=0
 
 for entry in "$directory"*
 do
-    number=$(caculate $successedCount+1)
+    number=$(caculate $successedCount+$failedCount+1)
     echo "---------------------- Flow $number ------------------------"
    
     log=$(maestro test "$entry")
