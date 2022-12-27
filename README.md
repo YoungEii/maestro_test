@@ -13,9 +13,7 @@
 ## Demo
 <img src="./demo/success.png" />
 <img src="./demo/failure.png" />
-<video controls>
-  <source src="./demo/demo.mp4" type="video/mp4">
-</video>
+<img src="./demo/demo.gif" />
 
 ## Weakness
 當需要驗證多個 flow 測試時會無法正常完成，從第二個 flow 開始不會自動操作，例如：點擊按鈕、滾動等互動行為，必須手動操作畫面讓 `Maestro` 檢查，是個很不方便的過程。這邊我透過撰寫 Shell Script 來解決問題，逐一進行個別的 flow 驗證，可以查看 `/scripts/run_test.sh` 檔案
