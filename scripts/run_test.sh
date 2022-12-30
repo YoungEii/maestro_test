@@ -52,4 +52,13 @@ fi
 
 echo
 
+if [[ $percent == *"100"* ]]; then
+    echo "Maestro tests passed!"
+else
+    echo "Maestro tests failed."
+    echo
+    
+    exit 1 
+fi
 
+echo
